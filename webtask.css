@@ -1,0 +1,39 @@
+#navbar>a{
+    background-color: rgb(151, 97, 252);
+color: antiquewhite;
+padding: 12px;
+text-decoration: none;
+border-radius: 8px;
+margin-right: 20px;
+}
+
+#header{
+    background-image: url(https://thumbs.dreamstime.com/b/wildflowers-blooming-sunset-nature-scenery-wildflowers-blooming-sunset-nature-scenery-388164189.jpg);
+    /* height: 600px; */
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#box{
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 400px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+#box>p{
+    margin: 20px 0 20px 0;
+    text-align: justify;
+}
+
+#box>button{
+    background-color: rgb(78, 164, 240);
+    border-radius: 6px;
+    padding: 14px 16px;
+    color: rgb(242, 243, 245);
+}

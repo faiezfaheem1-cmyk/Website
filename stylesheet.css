@@ -1,0 +1,238 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    background-color: crimson;
+}
+
+#logo>img {
+    width: 60px;
+   
+}
+
+
+#links>ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+#links>ul>li>a:hover {
+    background-color: black;
+    border-radius: 6px;
+    padding: 3px;
+    box-shadow: 0px 2px 12px rgba(19, 19, 19, 0.3);
+}
+
+/* Header Section */
+
+#header{
+ display: flex;
+ gap: 50px;   
+ padding: 100px 100px;
+ justify-content: space-between;
+}
+
+#hd_content{
+    width: 50%;
+}
+
+#hd_image{
+    width: 50%;
+}
+
+#hd_image>img{
+    width: 100%;
+    position: relative;
+    animation-name: animatio1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animatio1 {
+    from{
+        left: 0;
+    }to{
+        left: 20px;
+    }
+}
+#links>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+#pera1{
+    color: crimson;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#pera3{
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#bt1{
+    background-color: red;
+    padding: 12px 16px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+#bt2{
+    background-color: red;
+    padding: 12px 16px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Header End */
+
+
+/* Card Section */
+
+#cardsection{
+    padding: 40px 100px;
+}
+
+#cardcontent{
+    text-align: center;
+}
+
+#cardparent{
+    margin: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+#card1{
+    flex-grow: 1;
+    border: 1px;
+    padding: 12px;
+    box-shadow: 2px 2px 12px 2px rgb(0,0,0.3);
+}
+
+#card1>img{
+    width: 100%;
+}
+
+#card2{
+    flex-grow: 1;
+    border: 1px;
+    padding: 12px;
+    box-shadow: 2px 2px 12px 2px rgb(0,0,0.3);
+}
+
+#card2>img{
+    width: 100%;
+}
+
+#card3{
+    flex-grow: 1;
+    border: 1px;
+    padding: 12px;
+    box-shadow: 2px 2px 12px 2px rgb(0,0,0.3);
+}
+
+#card3>img{
+    width: 100%;
+}
+
+/* Contact section */
+.contactdetail{
+    text-align: center;
+}
+
+.contactparent{
+    padding: 0 100px;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contactinfo{
+    flex-grow: 1;
+    background-color: crimson;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contactform{
+    flex-grow: 1;
+    background-color: rgb(138, 128,138);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contactform>form>input{
+    padding: 12px;
+    border: none;
+}
+
+.contactform>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contactdata{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactdata{
+font-size: 16px;
+color: white;
+}
+
+.footer{
+    background-color: crimson;
+    padding: 50px 30px;
+    margin-top: 50px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer2{
+    display: flex;
+    gap: 20px;
+}
+/* contact section end */
+
+
+.gridparent{
+    width: 100px;
+   height: 100px;
+}
+
+.gridhome{
+    background-color: brown;
+}
