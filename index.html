@@ -1,45 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-
-    <div class="head1">
-
-        <div class="card1">
-            <h1>My Portoflio:</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab cupiditate quia optio? Fuga delectus dolorum
-                suscipit sunt laudantium, explicabo provident odit cupiditate labore eligendi! Dignissimos dolores quod
-                dolor et ex.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beauty Of The Beach — Beach Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#FF6B9D" />
+                  <stop offset="1" stop-color="#FFA502" />
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#g)" />
+              <path d="M32 16c-6 0-12 4-14 10m28 0c-2-6-8-10-14-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="32" cy="38" r="8" fill="#fff" opacity="0.8" />
+              <path d="M26 26h12M20 32h24" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <span class="site-title">Beauty Of The Beach</span>
+          </a>
         </div>
-        <div class="righthome">
-            <div class="f1" id="g1">img1</div>
-            <div class="f1" id="g2">img2 </div>
-            <div class="f1" id="g3">img3 </div>
-            <div class="f1" id="g4">img4 </div>
-            <div class="f1" id="g5">img5</div>
-            <div class="f1" id="g6">img6</div>
+          <nav class="main-nav">
+  <ul>
+     <li><a href="#Gallery">Gallery</a></li>
+    <li><a href="/south.html">South</a></li>
+    <li><a href="/east.html">East</a></li>
+    <li><a href="/west.html">West</a></li>
+    <li><a href="/north.html">North</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#About Us">About Us</a></li>
+  </ul>
+</nav>
+        <!-- <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav> -->
 
+        <div class="nav-actions">
+          <a class="btn-primary" href="#book">Book Now</a>
         </div>
-    </div>
-    
-    <h1>Responsive Design:</h1>
-    <div class="rp">
-        <div class="box1">
-            <h1>This is Box1</h1>
-        </div>
-        <div class="box2">
-            <h1>This is Box2</h1>
-        </div>
-    </div>
+      </div>
+    </header>
 
-</body>
+    <main>
+      <section class="hero">
+        <div class="slider" id="slider">
+          <div class="slides">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80&auto=format&fit=crop');" aria-hidden="false">
+              <div class="hero-inner">
+                <h1>Experience Paradise</h1>
+                <p>Handpicked beach stays, sunlit packages, and unforgettable sunsets.</p>
+                <a href="#book" class="btn-cta">Start Booking</a>
+              </div>
+            </div>
 
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1600&q=80&auto=format&fit=crop');" aria-hidden="true">
+              <div class="hero-inner">
+                <h1>Private Cabanas & Luxury Villas</h1>
+                <p>Choose the perfect stay tailored for couples, families, or solo escapes.</p>
+                <a href="#packages" class="btn-cta">See Packages</a>
+              </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1600&q=80&auto=format&fit=crop');" aria-hidden="true">
+              <div class="hero-inner">
+                <h1>Beach Activities & Tours</h1>
+                <p>From snorkeling to sunset cruises — book experiences that delight.</p>
+                <a href="#gallery" class="btn-cta">Explore Experiences</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+          <button class="slider-btn next" aria-label="Next slide">›</button>
+
+          <div class="slider-dots" id="dots"></div>
+        </div>
+      </section>
+
+      <section id="packages" class="info-section">
+        <div class="container">
+          <h2>🏖️ Popular Packages</h2>
+          <p>Thoughtfully curated stays and adventure bundles to match your dream beach holiday.</p>
+          <div class="cards">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=60&auto=format&fit=crop" alt="Sunset dinner">
+              <h3>💑 Romantic Sunset Getaway</h3>
+              <p>Private dinners, sunset walks, and deluxe waterfront rooms for your perfect romantic escape.</p>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=60&auto=format&fit=crop" alt="Family fun">
+              <h3>👨‍👩‍👧‍👦 Family Beach Fun</h3>
+              <p>Kids activities, group-friendly villas, and shallow safe waters for unforgettable family memories.</p>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=60&auto=format&fit=crop" alt="Adventure">
+              <h3>🏄 Adventure & Water Sports</h3>
+              <p>Snorkeling, surfing lessons, and guided beach hikes for thrill-seeking beach explorers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2>✨ Gallery Highlights</h2>
+          <p>Moments captured — the sea, the sand, and the smiles.</p>
+        </div>
+      </section>
+
+      <footer id="contact" class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section footer-brand">
+            <div class="footer-logo">
+              <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="fg" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#FF6B9D" />
+                    <stop offset="1" stop-color="#FFA502" />
+                  </linearGradient>
+                </defs>
+                <rect width="64" height="64" rx="16" fill="url(#fg)" />
+                <path d="M32 16c-6 0-12 4-14 10m28 0c-2-6-8-10-14-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="32" cy="38" r="8" fill="#fff" opacity="0.8" />
+                <path d="M26 26h12M20 32h24" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Beauty Of The Beach</h3>
+            <p>Experience the ultimate beach getaway with luxury stays and unforgettable coastal adventures.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook" class="social-btn">f</a>
+              <a href="#" aria-label="Instagram" class="social-btn">📷</a>
+              <a href="#" aria-label="Twitter" class="social-btn">𝕏</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">🏠 Home</a></li>
+              <li><a href="#packages">📦 Packages</a></li>
+              <li><a href="/gallery.html">🖼️ Gallery</a></li>
+              <li><a href="#contact">✉️ Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">❓ FAQ</a></li>
+              <li><a href="#">🛡️ Privacy Policy</a></li>
+              <li><a href="#">📋 Terms & Conditions</a></li>
+              <li><a href="#">📞 Help Center</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section footer-contact">
+            <h4>Contact Info</h4>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <p>123 Ocean Boulevard, Beach City 12345</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <p><a href="mailto:hello@beautyofthebeach.example">hello@beautyofthebeach.example</a></p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏰</span>
+              <p>24/7 Customer Support Available</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <div class="footer-credits">
+            <p>&copy; 2025 Beauty Of The Beach. All rights reserved. | Images via Unsplash</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
